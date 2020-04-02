@@ -1,3 +1,124 @@
-main.catalog-main {
- padding: 30px 0;
+
+.category {
+
+  &__title {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-align: left;
+  margin-top: 90px;
+  }
+
+  &__categorys-link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+  &__categorys-link:hover, &__categorys-link:focus {
+  
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+  
+  &__categorys-arrow {
+  
+    margin-right: 20px;
+  }
+
+  &__categorys-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 30px;
+  }
+
+  &___categorys-item {
+
+    position: relative;
+    width: 25%;
+    height: 270px;
+    margin: 0 -10px;
+  }
+  
+  &__link:hover  &__subtitle, &__link:focus  &__subtitle {
+  
+    text-decoration-line: underline;
+  }
+  
+  &__img {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #DBE4DB;
+  }
+  
+  &__subtitle {
+  
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  &__categorys-item {
+
+    position: relative;
+    width: 25%;
+    height: 270px;
+    margin: 20px 20px 0 -10px;
+  }
+  
+  &__categorys-item:nth-child(4) {
+  
+    margin-left: 200px;
+  }
+}
+
+.categorys-product {
+
+  width: 680px;
+  margin-bottom: 60px;
+
+  &__main-title {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  
+  &__main-text {
+  
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 0;
+    color: #1E0606;
+  }
 }

@@ -9,3 +9,14 @@
   background-color: #000000;
   transition: 0.5s;
 }
+
+.button_black:hover {
+
+  cursor: pointer;
+  background-color: #C29974;
+}
+
+.button_black:active {
+
+  background-color: #CFAF91;
+}

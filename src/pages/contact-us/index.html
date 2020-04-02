@@ -1,0 +1,60 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/oswald.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+  </head>
+  <body>
+@@include('header/index.html')
+<main>
+  <div class=" container">
+    <section class="contact-us">
+      <h2 class="contact-us__title">CONTACT US</h2>
+      <a class="contact-us__link" href="/index.html">Home</a>
+      <img class="contact-us__arrow" width="8" height="12" src="/static/images/vector3.svg" alt="vector3">
+      <a class="contact-us__link" href="#">Contact us</a>
+      <div class="contact-us__body">
+        <div>
+          <form class="contact-us__form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <div>
+              <label class="form-label" for="input-name">Name</label>
+              <input class="form-input" name="name" id="input-name" type="text">
+            </div>
+            <div class="form-row">
+              <div class="form-communication">
+                <label class="form-label" for="input-phone">Phone</label>
+                <input class="form-input" name="phone" id="input-phone" type="tel">
+              </div>
+              <div class="form-communication">
+                <label class="form-label" for="input-email">Email</label>
+                <input class="form-input" name="email" id="input-email" type="email">
+              </div>
+            </div>
+            <div>
+              <label class="form-label" for="input-message">Message</label>
+              <input class="form-input" name="message" id="input-message">
+            </div>
+            <label class="form-label" for="input-accept">
+              <input class="form-input-checkbox hidden" id="input-accept" name="accept" type="checkbox" 
+              value="By clicking on the button, you consent to the processing of your personal data">
+              <span class="form-checkbox"></span>
+              By clicking on the button, you consent to the processing of your personal data
+            </label>
+            <button class="contact-us__button-form" type="submit">SUBMIT</button>
+          </form>
+        </div>
+          <section class="contact-us__text">
+          <p class="contact-us__sentence-us">Our support team are on-hand to assist with any issues you are experiencing.</p>
+          <p class="contact-us__sentence-us">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+          <h3 class="contact-us__text-expert">An expert is waiting to help you!</h3>
+          </section>
+      </div>
+    </section>
+  </div>
+</main>
+@@include('footer/index.html')
+</body>
+</html>

@@ -7,7 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet');
-@import ".button/button";
+@import "./button/button";
+@import "./popup/popup";
 
 body { 
   
@@ -35,8 +36,14 @@ a {
   list-style-type: none;
 }
 
-.button_black {
+.fieldset-border-none {
+  border: none;
+  width: fit-content;
+  padding: 0;
+  }
 
+.button_black {
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   padding: 9px 22px;
   font-weight: bold;
@@ -59,36 +66,10 @@ a {
   background-color: #CFAF91;
 }
 
-body {
-  font-family: 'Oswald' , sans-serif;
-}
-
 .container {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.button-closed {
-
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background-image: url(/images/X.svg);
-  background-color: transparent;
-  top: 0;
-  right: -25px;
-  border: 0;
-}
-
-.button-closed:hover {
-
-  opacity: 0.5;
-}
-
-.button-closed:active {
-
-  opacity: 0.3;
 }
 

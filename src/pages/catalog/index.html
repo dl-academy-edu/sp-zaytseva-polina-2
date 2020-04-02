@@ -1,1 +1,57 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/oswald.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+      <section class="category container">
+        <h2 class="category__title">CATEGORY PRODUCTS</h2>
 
+        <a class="category__categorys-link designer" href="/index.html">Home</a>
+        <img class="category__categorys-arrow" width="8" height="12" src="/static/images/vector3.svg" alt="vector3">
+        <a class="category__categorys-link" href="#">Catalog</a>
+
+        <ul class="category__categorys-list list-hidden-marker">
+          <li class="category__categorys-item"><a class="category__link" href="index.html">
+            <img class="category__img" width="280" height="270" src="/static/images/apparel.jpg" alt="APPAREL KIDS">
+            <h3 class="category__subtitle">APPAREL KIDS</h3></a>
+          </li>
+          <li class="category__categorys-item"><a class="category__link" href="index.html">
+            <img class="category__img" width="280" height="270" src="/static/images/shop.jpg" alt="HOLIDAY SHOP">
+            <h3 class="category__subtitle">HOLIDAY SHOP</h3></a>
+          </li>
+          <li class="category__categorys-item"><a class="category__link" href="/pages/catalog/Toy-for-kids/index.html">
+            <img class="category__img" width="280" height="270" src="/static/images/toys.jpg" alt="TOYS">
+            <h3 class="category__subtitle">TOYS</h3></a>
+          </li>
+          <li class="category__categorys-item"><a class="category__link" href="index.html">
+            <img class="category__img" width="280" height="270" src="/static/images/accessories.jpg" alt="ACCESSORIES">
+            <h3 class="category__subtitle">ACCESSORIES</h3></a>
+          </li>
+          <li class="category__categorys-item"><a class="category__link" href="/index.html">
+            <img class="category__img" width="280" height="270" src="/static/images/sale.jpg" alt="SALE">
+            <h3 class="category__subtitle">SALE</h3></a>
+          </li>
+          <li class="category__categorys-item"><a class="category__link" href="/index.html">
+            <img class="category__img" width="280" height="270" src="/static/images/adults.jpg" alt="APPAREL ADULTS">
+            <h3 class="category__subtitle">APPAREL ADULTS</h3></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="categorys-product container">
+        <h2 class="categorys-product__main-title">Product Description</h2>
+        <p class="categorys-product__main-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+        <p class="categorys-product__main-text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+        <p class="categorys-product__main-text">he set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress. </p>
+      </section>
+    </main>
+    @@include('footer/index.html')
+  </body>
+</html>

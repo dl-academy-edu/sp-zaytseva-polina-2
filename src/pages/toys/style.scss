@@ -1,3 +1,360 @@
-main.toys-main {
- padding: 30px 0;
+.toys {
+
+  &__title {
+
+    width: 297px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #1E0606;
+    text-align: left;
+  }
+
+  &__link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+
+  &__link:hover, &__link:focus {
+
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+
+  &__arrow {
+
+    margin-right: 20px;
+  }
+}
+
+.toys-section {
+
+  background-color: rgba(125, 151, 218, 0.2);
+
+  &__toys-form {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  &__form-section {
+
+    margin: 0;
+  }
+  
+  &__section-title {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+  }
+
+  &__color-section {
+
+    margin: 15px 0;
+  }
+
+  &__form-color-checkbox {
+
+    position: relative;
+    padding-left: 25px;
+    margin-left: -18px;
+  }
+
+  &__form-color-checkbox::before {
+
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 19px;
+    height: 19px;
+    transform: translateY(-50%);
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  &__form-color-checkbox:hover, &__form-color:focus + &__form-color-checkbox {
+  
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  &__form-color:checked + &__form-color-checkbox:after {
+  
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    background-image: url(/static/images/galka.svg);
+  }
+
+  &__label-shipping {
+
+    position: relative;
+    padding-left: 30px;
+    margin-left: -25px;
+  }
+  
+  &__label-shipping::before {
+  
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 100%;
+  }
+  
+  &__form-shipping:checked + &__label-shipping::after {
+  
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-50%);
+    background-color: #C29974;
+    box-sizing: border-box;
+    border-radius: 100%;
+  }
+  
+  &__label-shipping:hover, &__form-shipping:focus + &__label-shipping {
+  
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &__shipping-section {
+
+    margin: 15px 0 10px 0;
+  }
+
+  &__amount-section {
+
+    display: flex;
+    padding-left: 0;
+    margin: 20px 0;
+  }
+
+  &__label-amount {
+
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 6px 19px;
+    margin-top:-22px;
+    width: 80px;
+    background-color: #FFFFFF;
+  }
+
+  &__label-amount:hover, &__form-amount:focus + &__label-amount {
+
+    cursor: pointer;
+    background-color: #EDDEEB;
+  }
+  
+  &__form-amount:checked + &__label-amount {
+  
+    background-color: #F3D0DB;
+  }
+
+  &__button-form-amount {
+
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.form-text {
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.toys-shop {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  &__list {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-bottom: 53px;
+    margin: -10px;
+  }
+
+  &__shop-item {
+
+    position: relative;
+    width: 380px;
+    height: 497px;
+    margin: 10px;
+  }
+
+  &__img {
+
+    width: 380px;
+    height: 385px;
+    background-color: #E5EAF8;
+  }
+  
+  &__toys-shop-img {
+  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 207px;
+    height: 207px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(calc(-50% - 59px)) translateX(-50%);
+    background-color: #E5EAF8;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  &__text {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  }
+
+  &__toy-link:hover &__toys-shop-img, &__toy-link:focus &__toys-shop-img {
+
+    opacity: 0.9;
+  }
+  
+  &__toy-link:active > &__toys-shop-img {
+  
+    opacity: 0.67;
+  }
+  
+  
+  &__text {
+  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  }
+  
+  &__shop-text {
+  
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E0606;
+    padding-top: 30px;
+    margin: 0;
+  }
+
+  &__usd-text {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E0606;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin: 0;
+  }
+}
+
+.img-nav {
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
+
+  &__link-color:hover, &__link-color:focus {
+
+    cursor: pointer;
+    stroke: #C29974;
+    stroke-opacity: 1;
+  }
+  
+  &__link-color:active {
+  
+    cursor: none;
+    stroke: #C29974;
+    stroke-opacity: 0.5;
+  }
+
+  &__number {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 0;
+    color: #1E0606;
+  }
+  
+  &__item {
+  
+    display: flex;
+    color: #1E0606;
+  }
+  
+  &__item:hover, &__item:focus {
+  
+    color: #C29974;
+  }
+  
+  &__item:active {
+  
+    opacity: 0.5;
+  }
 }
