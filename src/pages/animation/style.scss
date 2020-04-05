@@ -1,0 +1,151 @@
+.animation {
+
+  &__title {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-align: left;
+  margin-top: 90px;
+  }
+
+  &__link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+  &__link:hover, &__link:focus {
+  
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+  
+  &__arrow {
+  
+    margin-right: 20px;
+  }
+}
+
+.animation-scene {
+
+  margin-top: 50px;
+  position: relative;
+
+  &__clouds {
+
+  width: 100%
+  }
+
+  &__city {
+
+  width: 100%
+  }
+  
+  &__woman {
+
+  z-index: 4;
+  position: absolute;
+  left: 298px;
+  bottom: 29px;
+  }
+
+  &__suitcases {
+
+  z-index: 5;
+  position: absolute;
+  left: 285px;
+  bottom: 28px;
+  }
+
+  &__man {
+
+  z-index: 4;
+  position: absolute;
+  left: 398px;
+  bottom: 30px;
+  }
+
+  &__lampcolor {
+
+  z-index: 4;
+  position: absolute;
+  left: 1606px;
+  bottom: 60px;
+  }
+
+  &__lamp {
+
+  z-index: 3;
+  position: absolute;
+  left: 598px;
+  bottom: 216px;
+  }
+
+  &__lamptwo {
+
+  z-index: 3;
+  position: absolute;
+  left: 2024px;
+  bottom: 216px;
+  }
+
+  &__carone {
+
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 256px;
+  }
+
+  &__cartwo {
+
+    z-index: 2;
+    position: absolute;
+    left: 403px;
+    bottom: 256px;
+    }
+
+    &__carthree {
+
+    z-index: 2;
+    position: absolute;
+    left: 803px;
+    bottom: 256px;
+    }
+
+    &__carfour {
+
+    z-index: 2;
+    position: absolute;
+    left: 1853px;
+    bottom: 256px;
+    }
+
+    &__car {
+
+    z-index: 3;
+    position: absolute;
+    left: 1253px;
+    bottom: 106px;
+    animation: car 8s;
+    animation-iteration-count: infinite;
+    }
+
+    @keyframes car {
+
+    from {
+      left: 2500px;
+      bottom: 106px;
+    }
+    to /{
+      left: -398px;
+      bottom: 106px;
+    }
+    }
+}
