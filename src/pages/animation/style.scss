@@ -56,6 +56,29 @@
   bottom: 29px;
   }
 
+  &__shoe {
+
+  z-index: 4;
+  position: absolute;
+  left: 340px;
+  bottom: 29px;
+
+  animation: shoe 3s;
+  animation-iteration-count: infinite;
+  transform: rotateZ(0);
+  transform-origin: 0 0;
+  }
+
+  @keyframes shoe {
+    form {
+
+    }
+
+    to {
+    transform: rotateZ(-50deg);
+    }
+  }
+
   &__suitcases {
 
   z-index: 5;
@@ -72,13 +95,28 @@
   bottom: 30px;
   }
 
-  @keyframes man {
+  &__arm {
+
+  z-index: 3;
+  position: absolute;
+  left: 398px;
+  bottom: 287px;
+
+  animation: arm 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  transform: rotateZ(0);
+  transform-origin: 1 0 0;
+  }
+
+  @keyframes arm {
+    
     form {
     
     }
 
     to {
-    
+    transform: rotateZ(100deg);
     }
   }
 
