@@ -56,6 +56,25 @@
   bottom: 29px;
   }
 
+  &__womantext {
+
+  left: 198px;
+  overflow: hidden;
+  position: absolute;
+  animation: womantext 5s;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes womantext {
+    form {
+      bottom: 0;
+    }
+
+    to {
+    bottom: 300px;
+    }
+  }
+
   &__shoe {
 
   z-index: 4;
@@ -71,7 +90,7 @@
 
   @keyframes shoe {
     form {
-
+    transform: rotateZ(0);
     }
 
     to {
@@ -95,6 +114,26 @@
   bottom: 30px;
   }
 
+  &__mantext {
+
+  left: 398px;
+  overflow: hidden;
+  position: absolute;
+  animation: mantext 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  }
+
+    @keyframes mantext {
+    form {
+    bottom: 0;
+    }
+
+    to {
+    bottom: 400px;
+    }
+  }
+
   &__arm {
 
   z-index: 3;
@@ -106,7 +145,7 @@
   animation-iteration-count: infinite;
   animation-delay: 3s;
   transform: rotateZ(0);
-  transform-origin: 1 0 0;
+  transform-origin: 1 0;
   }
 
   @keyframes arm {
@@ -274,5 +313,25 @@
       left: -2298px;
       bottom: 106px;
     }
+  }
+
+  &__taxitext {
+
+    left: 698px;
+    overflow: hidden;
+    position: absolute;
+    animation: taxitext 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
     }
+  
+    @keyframes taxitext {
+    form {
+    bottom: 0;
+    }
+
+    to {
+    bottom: 400px;
+    }
+  }
 }

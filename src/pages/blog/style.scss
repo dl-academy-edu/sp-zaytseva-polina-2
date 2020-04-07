@@ -1,25 +1,25 @@
-.categorys-link {
-
-  font-family: 'Crimson Text', serif;
-  font-size: 20px;
-  line-height: 25px;
-  margin-right: 20px;
-  color: #1E0606;
-}
-
-.categorys-link:hover, .categorys-link:focus {
-
-  cursor: pointer;
-  color: #1E0606;
-  opacity: 0.5;
-}
-
-.categorys-arrow {
-
-  margin-right: 20px;
-}
-
 .blog {
+
+  &__categorys-link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+  &__categorys-link:hover, &__categorys-link:focus {
+  
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+  
+  &__categorys-arrow {
+  
+    margin-right: 20px;
+  }
 
   &__list {
 
