@@ -34,6 +34,7 @@
 
 .animation-scene {
 
+  overflow: hidden;
   margin-top: 50px;
   position: relative;
 
@@ -71,6 +72,16 @@
   bottom: 30px;
   }
 
+  @keyframes man {
+    form {
+    
+    }
+
+    to {
+    
+    }
+  }
+
   &__lampcolor {
 
   z-index: 4;
@@ -99,33 +110,105 @@
 
   z-index: 2;
   position: absolute;
-  left: 0;
+  left: -2800px;
   bottom: 256px;
+
+  animation: carone 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes carone {
+    
+    form {
+    bottom: 256px;
+    }
+
+    to {
+    left: 2890px;
+    bottom: 256px;
+    }
   }
 
   &__cartwo {
 
     z-index: 2;
     position: absolute;
-    left: 403px;
+    left: 2403px;
     bottom: 256px;
+
+    animation: cartwo 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
+    }
+
+    @keyframes cartwo {
+      
+    form {
+    left: 2403px;
+    bottom: 256px;
+    }
+
+    to {
+    left: -2567px;
+    bottom: 256px;
+    }
     }
 
     &__carthree {
 
     z-index: 2;
     position: absolute;
-    left: 803px;
+    left: -3000px;
     bottom: 256px;
+
+    animation: carthree 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+
+    @keyframes carthree {
+      
+      form { 
+      bottom: 256px;
+      }
+
+      to {
+      left: 2800px;
+      bottom: 256px;
+      }
     }
 
     &__carfour {
 
     z-index: 2;
     position: absolute;
-    left: 1853px;
+    left: 2300px;
     bottom: 256px;
+
+    animation: carfour 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
     }
+
+    @keyframes carfour {
+
+    form {
+
+    left: 2800px;
+    bottom: 256px;
+    transform: rotateY(0);
+    }
+
+    to {
+
+    left: -1800px;
+    bottom: 256px;
+    transform: rotateY(180deg);
+    }
+  }
 
     &__car {
 
@@ -133,6 +216,7 @@
     position: absolute;
     left: 1253px;
     bottom: 106px;
+
     animation: car 8s;
     animation-iteration-count: infinite;
     }
@@ -140,11 +224,16 @@
     @keyframes car {
 
     from {
-      left: 2500px;
+      left: 2900px;
       bottom: 106px;
     }
-    to /{
-      left: -398px;
+    60% {
+      left: 398px;
+      bottom: 106px;
+    }
+
+    to {
+      left: -2298px;
       bottom: 106px;
     }
     }
