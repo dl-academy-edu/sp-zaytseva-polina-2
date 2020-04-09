@@ -59,19 +59,21 @@
   &__womantext {
 
   left: 198px;
-  overflow: hidden;
+  bottom: 350px;
+  opacity: 0;
   position: absolute;
-  animation: womantext 5s;
-  animation-iteration-count: infinite;
+  animation: womantext 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
   }
 
   @keyframes womantext {
-    form {
-      bottom: 0;
+    0%, 100% {
+    opacity: 0;
     }
 
-    to {
-    bottom: 300px;
+    20%, 80% {
+    opacity: 1;
     }
   }
 
@@ -85,17 +87,21 @@
   animation: shoe 3s;
   animation-iteration-count: infinite;
   transform: rotateZ(0);
-  transform-origin: 0 0;
+  transform-origin: 90% 5%;
   }
 
   @keyframes shoe {
-    form {
-    transform: rotateZ(0);
-    }
-
-    to {
-    transform: rotateZ(-50deg);
-    }
+    0% {
+      transform: rotateZ(0);
+      }
+  
+      50% {
+      transform: rotateZ(-100deg);
+      }
+  
+      100% {
+      transform: rotateZ(0);
+      }
   }
 
   &__suitcases {
@@ -117,22 +123,23 @@
   &__mantext {
 
   left: 398px;
-  overflow: hidden;
+  bottom: 400px;
+  opacity: 0;
   position: absolute;
-  animation: mantext 5s;
+  animation: mantext 4s;
   animation-delay: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   }
 
-    @keyframes mantext {
-    form {
-    bottom: 0;
+  @keyframes mantext {
+    0%, 100% {
+    opacity: 0;
     }
 
-    to {
-    bottom: 400px;
-    }
+    20%, 80% {
+    opacity: 1;
   }
+}
 
   &__arm {
 
@@ -142,21 +149,22 @@
   bottom: 287px;
 
   animation: arm 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-delay: 3s;
-  transform: rotateZ(0);
-  transform-origin: 1 0;
+  transform: rotateZ(100deg);
+  transform-origin: 17% 87%;
   }
 
   @keyframes arm {
-    
-    form {
-    
-    }
 
-    to {
+    0%, 100% {
     transform: rotateZ(100deg);
     }
+
+    50% {
+    transform: rotateZ(0);
+    }
+
   }
 
   &__lampcolor {
@@ -291,11 +299,12 @@
 
     z-index: 3;
     position: absolute;
-    left: 1253px;
+    left: -1253px;
     bottom: 106px;
 
     animation: car 8s;
-    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
     }
 
     @keyframes car {
@@ -318,20 +327,22 @@
   &__taxitext {
 
     left: 698px;
-    overflow: hidden;
+    bottom: 380px;
+    opacity: 0;
     position: absolute;
-    animation: taxitext 5s;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;
+    animation: taxitext 2s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
     }
   
     @keyframes taxitext {
-    form {
-    bottom: 0;
+
+    0%, 100% {
+    opacity: 0;
     }
 
-    to {
-    bottom: 400px;
+    20%, 80% {
+    opacity: 1;
     }
   }
 }
