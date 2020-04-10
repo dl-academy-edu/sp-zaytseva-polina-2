@@ -1,4 +1,6 @@
-.contact-us-form {
+.contact-us {
+  
+&__form {
 
   max-width: 680px;
   margin: auto;
@@ -8,14 +10,14 @@
   background-color: #E5EAF8;
 }
 
-.form-label {
+&__form-label {
 
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 }
 
-.form-input {
+&__form-input {
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -32,20 +34,21 @@
   padding: 14px 0 14px 20px;
 }
 
-.form-row {
+
+&__form-row {
 
   margin: 0 -10px;
   display: flex;
   justify-content: space-between;
 }
 
-.form-communication {
+&__form-communication {
 
   margin: 0 10px;
   width: 100%;
 }
 
-.button-form {
+&__button-form {
 
   cursor: pointer;
   font-weight: bold;
@@ -57,35 +60,35 @@
   margin-top: 20px;
 }
 
-.form-label-checkbox {
+&__form-label-checkbox {
 
   display: flex;
   align-items: center;
 }
 
-.form-checkbox {
+&__form-checkbox {
 
   position: relative;
   padding-left: 30px;
   margin-left: -14px;
 }
 
-.accept-section {
+&__accept-section {
 
   display: flex;
 }
 
-.form-input:hover, .form-input:focus {
+&__form-input:hover, &__form-input:focus {
 
   border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.form-input:active {
+&__form-input:active {
 
   border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.form-checkbox::before {
+&__form-checkbox::before {
 
   content: "";
   display: block;
@@ -100,7 +103,7 @@
   border-radius: 3px;
 }
 
-.form-input-checkbox:checked + .form-checkbox:after {
+&__form-input-checkbox:checked + &__form-checkbox:after {
 
   content: "";
   display: block;
@@ -114,18 +117,18 @@
   background-image: url(/static/images/galka.svg);
 }
 
-.form-label:hover, .form-input-checkbox:focus + .form-label {
+&__form-label:hover, &__form-input-checkbox:focus + &__form-label {
   
   cursor: pointer;
   text-decoration: underline;
 }
 
-.button-form-grey {
+&__button-form-grey {
 
   background-color: #C1C1C1;
 }
 
-.button-closed {
+&__button-closed {
 
   width: 15px;
   height: 15px;
@@ -137,17 +140,17 @@
   border: 0;
 }
 
-.button-closed:hover {
+&__button-closed:hover {
 
   opacity: 0.5;
 }
 
-.button-closed:active {
+&__button-closed:active {
 
   opacity: 0.3;
 }
 
-.modal-form {
+&__modal-form {
 
   display: flex;
   position: fixed;
@@ -158,14 +161,16 @@
   background-color: rgba(125, 151, 218, 0.8);
 }
 
-.modal-form-window {
+&__modal-form-window {
 
   margin: auto;
   position: relative;
 }
 
-
-.modal-form_none {
+&__modal-form_none {
 
   display: none;
 }
+}
+
+

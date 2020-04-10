@@ -8,9 +8,53 @@
   min-height: 411px;
   margin-top: 129px;
   background: #EEE4DB;
+
+  &__slider-buttons {
+  
+  position: absolute;
+  left: 28px;
+  top: 17px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  &__number {
+
+  width: 61px;
+  height: 70px;
+  margin-bottom: 17px;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+  background: #EEE4DB;
+
+  }
+  
+  &__button {
+  
+  display: block;
+  border: 0;
+  width: 31px;
+  height: 3px;
+  margin-bottom: 11px;
+  background-color: #D6CAC2;
+  }
+  
+  &__button:hover, &__button:focus {
+  
+  background-color: rgba(30, 6, 6, 0.6);
+  }
+  
+  &__button-1 {
+  
+  background-color: rgba(30, 6, 6, 0.6);
+  }
 }
 
-.slide {
+.slider {
+
+&__slide {
 
   position: relative;
   display: flex;
@@ -22,8 +66,7 @@
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
-
-
+}
 
   &__title {
 
@@ -86,48 +129,6 @@
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #C29974;
-  }
-}
-
-.slider-buttons {
-  
-  position: absolute;
-  left: 28px;
-  top: 17px;
-  display: flex;
-  flex-direction: column;
-
-  &__number {
-
-  width: 61px;
-  height: 70px;
-  margin-bottom: 17px;
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 73px;
-  color: rgba(30, 6, 6, 0.05);
-  background: #EEE4DB;
-
-  }
-  
-  &__button {
-  
-  display: block;
-  border: 0;
-  width: 31px;
-  height: 3px;
-  margin-bottom: 11px;
-  background-color: #D6CAC2;
-  }
-  
-  &__button:hover, &__button:focus {
-  
-  background-color: rgba(30, 6, 6, 0.6);
-  }
-  
-  &__button__1 {
-  
-  background-color: rgba(30, 6, 6, 0.6);
   }
 }
 

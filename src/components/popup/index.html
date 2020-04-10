@@ -1,28 +1,30 @@
-<div class="modal-form modal-form_none modal-form_js">
-  <form class="contact-us-form modal-form-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-    <div>
-      <label class="form-label" for="input-name">Name</label>
-      <input class="form-input form-input_js" name="name" id="input-name" type="text">
-    </div>
-    <div class="form-row">
-      <div class="form-communication">
-        <label class="form-label" for="input-phone">Phone</label>
-        <input class="form-input" name="phone" id="input-phone" type="tel">
+<section class="contact-us">
+  <div class="contact-us__modal-form contact-us__modal-form_none modal-form_js">
+    <form class="contact-us__form contact-us__modal-form-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+      <div>
+        <label class="contact-us__form-label" for="input-name">Name</label>
+        <input class="contact-us__form-input" name="name" id="input-name" type="text">
       </div>
-      <div class="form-communication">
-        <label class="form-label" for="input-email">Email</label>
-        <input class="form-input" name="email" id="input-email" type="email">
+      <div class="contact-us__form-row">
+        <div class="contact-us__form-communication">
+          <label class="contact-us__form-label" for="input-phone">Phone</label>
+          <input class="contact-us__form-input" name="phone" id="input-phone" type="tel">
+        </div>
+        <div class="contact-us__form-communication">
+          <label class="contact-us__form-label" for="input-email">Email</label>
+          <input class="contact-us__form-input" name="email" id="input-email" type="email">
+        </div>
       </div>
-    </div>
-    <div>
-      <label class="form-label" for="input-message">Message</label>
-      <input class="form-input" name="message" id="input-message">
-    </div>
-    <div class="accept-section">
-      <input class="form-input-checkbox opacity" id="input-accept" name="accept" type="checkbox" value="accept">
-      <label class="form-label form-checkbox" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
-    </div>
-    <button disabled class="button-form" type="submit">SUBMIT</button>
-    <button class="button-closed button-closed_js" type="button"></button>
-  </form>
-</div>
+      <div>
+        <label class="contact-us__form-label" for="input-message">Message</label>
+        <input class="contact-us__form-input" name="message" id="input-message">
+      </div>
+      <div class="contact-us__accept-section">
+        <input class="contact-us__form-input-checkbox opacity" id="input-accept" name="accept" type="checkbox" value="accept">
+        <label class="contact-us__form-label contact-us__form-checkbox" for="input-accept">By clicking on the button, you consent to the processing of your personal data</label>
+      </div>
+      <button disabled class="contact-us__button-form" type="submit">SUBMIT</button>
+      <button class="contact-us__button-closed button-closed_js" type="button"></button>
+    </form>
+  </div>
+</section>
