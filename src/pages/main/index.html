@@ -22,7 +22,13 @@
           </div>
           <div class="slider">
             <div class="slider__slide">
-              <img class="slider__img" src="static/images/poster.png" alt="slide">
+              <picture>
+                <source srcset="static/images/slide-mobile.png"
+                  media="(max-width: 375px)">
+                  <source srcset="static/images/slide-tablet.png"
+                media="(max-width: 768px)">
+                <img class="slider__img" src="static/images/poster.png" alt="slide">
+              </picture>
                 <h2 class="slider__title">THE OOH NOO COLLECTION</h2>
                 <p class="slider__text">Designed in Slovenia</p>
                 <button class="slider__link slider__link_js button_black">EXPLORE NOW</button>
@@ -50,74 +56,82 @@
         </section>
       </div>
 
-      <section class="category container">
-        <h2 class="category__title">CATEGORY PRODUCTS</h2>
-        <ul class="category__list list-hidden-marker">
-          <li class="category__item"><a class="category__link" href="#">
-            <img class="category__img" src="static/images/apparel.jpg" alt="APPAREL KIDS">
-            <h3 class="category__subtitle">APPAREL KIDS</h3></a>
-          </li>
-          <li class="category__item"><a class="category__link" href="#">
-            <img class="category__img" src="static/images/shop.jpg" alt="HOLIDAY SHOP">
-            <h3 class="category__subtitle">HOLIDAY SHOP</h3></a>
-          </li>
-          <li class="category__item"><a class="category__link" href="/pages/toys/index.html">
-            <img class="category__img" src="static/images/toys.jpg" alt="TOYS">
-            <h3 class="category__subtitle">TOYS</h3></a>
-          </li>
-          <li class="category__item"><a class="category__link" href="#">
-            <img class="category__img" src="static/images/accessories.jpg" alt="ACCESSORIES">
-            <h3 class="category__subtitle">ACCESSORIES</h3></a>
-          </li>
-        </ul>
-        <div class="category__box">
-          <button class="category__box-button"><img class="vector__img" width="37" height="37" src="static/images/vector1.svg" alt="vector1"></button>
-          <button class="category__box-button"><img class="vector__img" width="37" height="37" src="static/images/vector2.svg" alt="vector2"></button>
-          <p class="category__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
-        </div>
-      </section>
-      
-      <section class="delivery container">
-        <img class="delivery__img" width="480" height="559" src="static/images/girl.png" alt="delivery">
-        <div class="delivery__content">
-          <h2 class="delivery__title">Delivery</h2>
-          <ul class="delivery__buttons-list list-hidden-marker">
-            <li class="delivery__button-item"><button class="delivery__button delivery__button-default">Delivery</button></li>
-            <li class="delivery__button-item"><button class="delivery__button">Guarantee</button></li>
-            <li class="delivery__button-item"><button class="delivery__button">Credit</button></li>
+      <div class="container">
+        <section class="category">
+          <h2 class="category__title">CATEGORY PRODUCTS</h2>
+          <ul class="category__list list-hidden-marker">
+            <li class="category__item"><a class="category__link" href="#">
+              <img class="category__img" src="static/images/apparel.jpg" alt="APPAREL KIDS">
+              <h3 class="category__subtitle">APPAREL KIDS</h3></a>
+            </li>
+            <li class="category__item"><a class="category__link" href="#">
+              <img class="category__img" src="static/images/shop.jpg" alt="HOLIDAY SHOP">
+              <h3 class="category__subtitle">HOLIDAY SHOP</h3></a>
+            </li>
+            <li class="category__item"><a class="category__link" href="/pages/toys/index.html">
+              <img class="category__img" src="static/images/toys.jpg" alt="TOYS">
+              <h3 class="category__subtitle">TOYS</h3></a>
+            </li>
+            <li class="category__item"><a class="category__link" href="#">
+              <img class="category__img" src="static/images/accessories.jpg" alt="ACCESSORIES">
+              <h3 class="category__subtitle">ACCESSORIES</h3></a>
+            </li>
           </ul>
-          <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days
-            that i am completely shocked that four years have flown by. It's simply magical.</p>
-          <p class="delivery__text">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place
-            for me and i have you and all of the beautiful designers that we work with to thank!</p>
-          <a class="delivery__link button button_black" href="#">LEARN MORE</a>
-        </div>
-      </section>
-
-      <section class="partners container">
-        <h2 class="hidden">Partners</h2>
-        <ul class="partners__list list-hidden-marker">
-          <li class="partners__item "><a class="partners__link" href="#"><img width="193" height="60" src="static/images/mail.png" alt="mail"></a></li>
-          <li class="partners__item "><a class="partners__link" href="#"><img width="179" height="61" src="static/images/apple.png" alt="apple"></a></li>
-          <li class="partners__item "><a class="partners__link" href="#"><img width="216" height="46" src="static/images/eltex.png" alt="eltex"></a></li>
-          <li class="partners__item "><a class="partners__link" href="#"><img width="211" height="40" src="static/images/owox.png" alt="owox"></a></li>
-        </ul>
-      </section>
-
-      <div class="about-us container">
-        <section class="design-life-kids">
-          <h1 class="design-life-kids__title"> DESIGN LIFE KIDS </h1>
-          <h3 class="design-life-kids__about-us-title">About Us</h3>
-          <p class="design-life-kids__about-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
-            shocked that four years have flown by. It's simply magical.</p>
-          <a class="design-life-kids__button button_black" href="#">BUY NOW</a>
+          <div class="category__box">
+            <button class="category__box-button"><img class="vector__img" width="37" height="37" src="static/images/vector1.svg" alt="vector1"></button>
+            <button class="category__box-button"><img class="vector__img" width="37" height="37" src="static/images/vector2.svg" alt="vector2"></button>
+            <p class="category__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+          </div>
         </section>
-        <section class="contacts">
-          <h2 class="contacts__title">CONTACTS</h2>
-          <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
-            shocked that four years have flown by. It's simply magical.</p>
-          <img class="contacts__map-image" width="483" height="196" src="static/images/map.png" alt="map">
+      </div>
+      
+      <!-- <div class="container">
+        <section class="delivery">
+          <img class="delivery__img" width="480" height="559" src="static/images/girl.png" alt="delivery">
+          <div class="delivery__content">
+            <h2 class="delivery__title">Delivery</h2>
+            <ul class="delivery__buttons-list list-hidden-marker">
+              <li class="delivery__button-item"><button class="delivery__button delivery__button-default">Delivery</button></li>
+              <li class="delivery__button-item"><button class="delivery__button">Guarantee</button></li>
+              <li class="delivery__button-item"><button class="delivery__button">Credit</button></li>
+            </ul>
+            <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days
+              that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <p class="delivery__text">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place
+              for me and i have you and all of the beautiful designers that we work with to thank!</p>
+            <a class="delivery__link button button_black" href="#">LEARN MORE</a>
+          </div>
         </section>
+      </div>
+
+      <div class="container">
+        <section class="partners">
+          <h2 class="hidden">Partners</h2>
+          <ul class="partners__list list-hidden-marker">
+            <li class="partners__item "><a class="partners__link" href="#"><img width="193" height="60" src="static/images/mail.png" alt="mail"></a></li>
+            <li class="partners__item "><a class="partners__link" href="#"><img width="179" height="61" src="static/images/apple.png" alt="apple"></a></li>
+            <li class="partners__item "><a class="partners__link" href="#"><img width="216" height="46" src="static/images/eltex.png" alt="eltex"></a></li>
+            <li class="partners__item "><a class="partners__link" href="#"><img width="211" height="40" src="static/images/owox.png" alt="owox"></a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container">
+        <div class="about-us">
+          <section class="design-life-kids">
+            <h1 class="design-life-kids__title"> DESIGN LIFE KIDS </h1>
+            <h3 class="design-life-kids__about-us-title">About Us</h3>
+            <p class="design-life-kids__about-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
+              shocked that four years have flown by. It's simply magical.</p>
+            <a class="design-life-kids__button button_black" href="#">BUY NOW</a>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts__title">CONTACTS</h2>
+            <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
+              shocked that four years have flown by. It's simply magical.</p>
+            <img class="contacts__map-image" width="483" height="196" src="static/images/map.png" alt="map">
+          </section>
+        </div> -->
       </div>
     </main>
     @@include('footer/index.html')
