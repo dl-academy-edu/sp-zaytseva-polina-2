@@ -2,7 +2,11 @@
       <div class="container">
         <div class="header__content">
           <a href="/index.html" class="header__logo-link">
-            <img class="header__logo" width="100" height="52" src="/static/images/logo.svg" alt="logo">
+            <picture>
+              <source srcset="static/images/dlk-mobile.svg"
+                media="(max-width: 425px)">
+              <img class="header__logo" src="/static/images/logo.svg" alt="logo">
+            </picture>
           </a>
           <nav class="header__menu-wrapper">
             <ul class="list-hidden-marker header__menu">
@@ -29,7 +33,11 @@
             <ul class="header__search-list list-hidden-marker">
               <li>
                 <a class="header__search-link" href="#">
-                  <img class="header__search-image" src="/static/images/search.svg" alt="search">
+                  <picture>
+                    <source srcset="static/images/search-mobile.svg"
+                      media="(max-width: 320px)">
+                    <img class="header__search-image" src="/static/images/search.svg" alt="search">
+                  </picture>
                 </a>
               </li>
               <li>

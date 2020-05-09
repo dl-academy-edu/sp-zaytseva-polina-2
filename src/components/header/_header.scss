@@ -14,6 +14,12 @@
     
       display: flex;
       justify-content: space-between;
+
+      @media (min-width: 320px) and (max-width: 425px) {
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-bottom: 26px;
+      }
     }
     
     &__logo-link:hover {
@@ -79,12 +85,24 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media (min-width: 0) and (max-width: 767px) {
+        padding: 0;
+      }
     }
     
     &__search-link {
     
       margin-right: 24px;
       display: flex;
+
+      @media (min-width: 0) and (max-width: 375px) {
+        margin-right: 310px;
+      }
+
+      @media (min-width: 375) and (max-width: 767px) {
+        margin-right: 270px;
+      }
     }
     
     &__search-link:hover {
@@ -119,6 +137,8 @@
     }
 
     &__menu-button {
+      font-size: 14px;
+      line-height: 19px;
       display: none;
       border: none;
       background-color: transparent;
@@ -131,7 +151,10 @@
       }
 
       @media (min-width: 0) and (max-width: 375px) {
+        cursor: pointer;
         display: initial;
+        text-align: center;
+        width: 100%;
       }
     }
   }
