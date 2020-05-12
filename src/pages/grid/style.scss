@@ -39,7 +39,12 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(13,1fr);
-  grid-template-rows: repeat(11,150px);
+  grid-template-rows: repeat(11,1fr);
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(16,1fr);
+  }
 }
 
 .grid-box {
@@ -374,6 +379,11 @@
     grid-column: 1/7;
     grid-row: 1/4;
     background-color: #FFFFFF;
+
+    @media (max-width: 768px) {
+      grid-column: 1/12;
+      grid-row: 2/5;
+    }
   }
 
   &_2 {
@@ -384,6 +394,11 @@
     grid-column: 7/13;
     grid-row: 1/4;
     background-color: #F7F8FA;
+
+    @media (max-width: 768px) {
+      grid-column: 1/12;
+      grid-row: 1/2;
+    }
   }
 
   &_3 {
@@ -393,41 +408,73 @@
     grid-column: 1/4;
     grid-row: 4/7;
     background-color: #EF5539;
+
+    @media (max-width: 768px) {
+      grid-row: 6/8;
+    }
   }
 
   &_4 {
     grid-column: 4/10;
     grid-row: 4/7;
     background-color: #FFFFFF;
+
+    @media (max-width: 768px) {
+      grid-column: 1/12;
+      grid-row: 6/7;
+    }
   }
 
   &_5 {
     grid-column: 10/13;
     grid-row: 4/10;
     background-color: #8F75BC;
+
+    @media (max-width: 768px) {
+      grid-column: 4/8;
+      grid-row: 10/13;
+    }
   }
 
   &_6 {
     grid-column: 1/7;
     grid-row: 7/10;
     background-color: #93B7B7;
+
+    @media (max-width: 768px) {
+      grid-column: 1/4;
+      grid-row: 7/11;
+    }
   }
 
   &_7 {
     grid-column: 7/10;
     grid-row: 7/10;
     background-color: #F7F8FA;
+
+    @media (max-width: 768px) {
+      grid-column: 4/6;
+      grid-row: 6/8;
+    }
   }
 
   &_8 {
     grid-column: 1/4;
     grid-row: 10/12;
     background-color: #F7F8FA;
+
+    @media (max-width: 768px) {
+      grid-column: 1/12;
+    }
   }
 
   &_9 {
     grid-column: 4/13;
     grid-row: 10/12;
     background-color: #2C2C2C;
+
+    @media (max-width: 768px) {
+      grid-column: 1/12;
+    }
   }
 }
