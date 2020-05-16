@@ -25,7 +25,11 @@
                 <p class="box-text__text">3D Touch. 12MP photos. 4K video. One powerful phone</p>
                 <a class="box-text__links" href="#">Learn more or visit an Apple Store today</a>
               </div>
-              <img class="grid__img" src="/static/images/grid-phone.jpg" alt="grid-phone">
+              <picture>
+                <source srcset="/static/images/grid-phone-mobile.jpg"
+                media="(min-width: 375px)">
+                <img class="grid__img" src="/static/images/grid-phone.jpg" alt="grid-phone">
+              </picture>
             </div>
             <div class="grid-text box_2">
               <a class="grid-text__link" href="#">LEARN MORE</a>
@@ -45,8 +49,8 @@
                 <p class="grid-monik__title">Hardly a month passes these days where</p>
                 <picture>
                   <source srcset="static/images/monik-tablet.png"
-                media="(max-width: 768px)">
-                <img class="grid-monik__img" src="/static/images/grid-monik.jpg" alt="grid-monik">
+                  media="(max-width: 768px)">
+                  <img class="grid-monik__img" src="/static/images/grid-monik.jpg" alt="grid-monik">
                 </picture>
               </div>
               <div class="box-monik-text">
