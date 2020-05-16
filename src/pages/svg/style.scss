@@ -1,4 +1,7 @@
 .svg {
+
+  transition: 1s;
+
   &__title{
 
   font-family: 'Montserrat', sans-serif;
@@ -26,7 +29,6 @@
   }
   
   &__categorys-arrow {
-  
     margin-right: 20px;
   }
 }

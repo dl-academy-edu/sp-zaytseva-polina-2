@@ -6,6 +6,18 @@
   padding: 0 30px 80px 30px;
   background: #E1F0F7;
 
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+
   &__title {
 
     margin: -24px 0;
@@ -29,5 +41,17 @@
     border: none;
     position: absolute;
     top: calc(100% - 80px);
+
+    @media (max-width: 1023px) {
+      width: 284px;
+      height: 151px;
+      top: calc(100% - 30px);
+    }
+  
+    @media (max-width: 767px) {
+      width: 335px;
+      height: 196px;
+      top: calc(100% - 30px);
+    }
   }
 }

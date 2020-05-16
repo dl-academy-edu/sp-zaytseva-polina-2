@@ -42,15 +42,17 @@
       </section>
     </div>
     <div class="footer__line">
-      <div class="footer__star-block footer__container">
-        <p class="footer__star-text">Company Rating</p>
-        <button class="footer__button-star"><img class="stars" src="/static/images/star.svg" alt="star"></button>
-        <button class="footer__button-star"><img class="stars" src="/static/images/star.svg" alt="star"></button>
-        <button class="footer__button-star"><img class="stars" src="/static/images/star.svg" alt="star"></button>
-        <button class="footer__button-star"><img class="stars" src="/static/images/star.svg" alt="star"></button>
-        <button class="footer__button-star"><img class="stars" src="/static/images/star.svg" alt="star"></button>
-      </div>
-      <p class="footer__star-block footer__container">Copyright © 2018 Dlk • Design Life Kids</p>
-      <a class="footer__star-block footer__container footer__link footer__gray-text" href="#">Web Design — Direct Line Development</a>
+      <fieldset class="footer__star-block footer__container">
+        <legend class="footer__star-text">Company Rating</legend>
+          <div class="stars-group">
+            <input class="footer__button-star" type="radio" name="rating" value="1" aria-label="плохо">
+            <input class="footer__button-star" type="radio" name="rating" value="2" aria-label="средне">
+            <input class="footer__button-star" type="radio" name="rating" value="3" aria-label="нормально">
+            <input class="footer__button-star" type="radio" name="rating" value="4" aria-label="хорошо">
+            <input class="footer__button-star" type="radio" name="rating" value="5" aria-label="отлично">
+          </div>
+      </fieldset>
+      <p class="footer__star-blocks footer__container">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a class="footer__star-blocks footer__container footer__link footer__gray-text" href="#">Web Design — Direct Line Development</a>
     </div>      
 </footer>
