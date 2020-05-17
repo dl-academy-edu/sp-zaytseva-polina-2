@@ -1,6 +1,65 @@
-.svg {
+.svg .line {
 
-  transition: 1s;
+  transition: 1s transform;
+  transform: translateX(200px);
+  
+}
+  .svg {
+    cursor: pointer;
+  }
+
+  .svg:hover .line {
+    transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .svg .half {
+    transition: 1s transform;
+    transform: translateX(-250px);
+  }
+
+  .svg:hover .half {
+    transform: translateX(0);
+  }
+
+  .svg .sun {
+    transition: 1s transform;
+    transform: translateX(250px);
+  }
+
+  .svg:hover .sun {
+    transform: translateX(0);
+  }
+
+  .svg .big-mountain {
+    transition: 1s transform;
+    transform: translateX(-450px);
+  }
+
+  .svg:hover .big-mountain {
+    transform: translateX(0);
+  }
+
+  .svg .mountain {
+    transition: 1s transform;
+    transform: translateX(250px);
+  }
+
+  .svg:hover .mountain {
+    transform: translateX(0);
+  }
+
+  .svg .total {
+    transition: 1s transform;
+    transform: translateX(-450px);
+  }
+
+  .svg:hover .total {
+    transform: translateX(0);
+  }
+
+
+.svg-caption {
 
   &__title{
 
