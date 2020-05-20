@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link href="/common.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/oswald.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   </head>
   <body>
     @@include('header/index.html')
@@ -15,6 +19,7 @@
         <a class="animation__link" href="#">Animation</a>
       </section>
       <section class="animation-scene">
+        <h1 hidden>анимация</h1>
         <img class="animation-scene__clouds" src="/static/images/clouds.jpg" alt="clouds">
         <img class="animation-scene__city" width="1618" height="700" src="/static/images/city.jpg" alt="scene">
         <img class="animation-scene__woman" src="/static/images/woman.svg" alt="woman">
@@ -34,7 +39,7 @@
         <img class="animation-scene__car" src="/static/images/car.png" alt="car">
         <img class="animation-scene__taxitext" src="/static/images/taxitext.svg" alt="taxitext">
       </section>
-    <main>
+    </main>
   @@include('footer/index.html')
   </body>
 </html>

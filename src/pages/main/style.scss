@@ -206,11 +206,13 @@
     margin: 0 -10px;
 
     @media (max-width: 768px ) {
-      
+      padding: 0 10px;
+      margin: 0 -10px;
     }
 
     @media (min-width: 0) and (max-width: 640px ) {
-      
+      padding: 0 10px;
+      margin: 0 -10px;
     }
   }
 

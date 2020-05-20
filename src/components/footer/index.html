@@ -44,13 +44,28 @@
     <div class="footer__line">
       <fieldset class="footer__stars-block footer__container">
         <legend class="footer__star-text">Company Rating</legend>
-        <div class="stars-group">
-          <input class="footer__star-block" type="radio" name="rating" value="1" aria-label="плохо">@@include('star/index.html')
-          <input class="footer__star-block" type="radio" name="rating" value="2" aria-label="средне">@@include('star/index.html')
-          <input class="footer__star-block" type="radio" name="rating" value="3" aria-label="нормально">@@include('star/index.html')
-          <input class="footer__star-block" type="radio" name="rating" value="4" aria-label="хорошо">@@include('star/index.html')
-          <input class="footer__star-block" type="radio" name="rating" value="5" aria-label="отлично">@@include('star/index.html')
-        </div>
+          <ul class="footer__stars-section list-hidden-marker">
+            <li class="footer__stars-group">
+              <label class="footer__label-star" for="input-star1">@@include('star/index.html')</label>
+              <input class="footer__form-star opacity" id="input-star1" name="rating" type="radio" value="1">
+            </li>
+            <li class="footer__stars-block">
+              <label class="footer__label-star" for="input-star2">@@include('star/index.html')</label>
+              <input class="footer__form-star opacity" id="input-star2" name="rating" type="radio" value="2">
+            </li>
+            <li class="footer__stars-block">
+              <label class="footer__label-star" for="input-star3">@@include('star/index.html')</label>
+              <input class="footer__form-star opacity" id="input-star3" name="rating" type="radio" value="3">
+            </li>
+            <li class="footer__stars-block">
+              <label class="footer__label-star" for="input-star4">@@include('star/index.html')</label>
+              <input class="footer__form-star opacity" id="input-star4" name="rating" type="radio" value="4">
+            </li>
+            <li class="footer__stars-block">
+              <label class="footer__label-star" for="input-star5">@@include('star/index.html')</label>
+              <input class="footer__form-star opacity" id="input-star5" name="rating" type="radio" value="5">
+            </li>
+          </ul>
       </fieldset>
       <p class="footer__blocks footer__container">Copyright © 2018 Dlk • Design Life Kids</p>
       <a class="footer__blocks footer__container footer__link footer__gray-text" href="#">Web Design — Direct Line Development</a>

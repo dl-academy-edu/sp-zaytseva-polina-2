@@ -1,19 +1,39 @@
 .footer {
+
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Open Sans', sans-serif;
   padding: 100px 0;
   color: #FFFFFF;
   background: #434343;
   margin-top: 60px;
 
-  &__container {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 80px 60px;
+    }
 
+    @media (min-width: 0) and (max-width: 767px) {
+      padding: 70px 21px;
+    }
+  
+
+  &__container {
+  
     width: 33.33%;
     padding: 0 10px 0 0;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 0 20px 0 0;
+      }
   }
   
   &__content {
   
     display: flex;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      flex-wrap: nowrap;
+      }
   }
   
   &__title {
@@ -75,23 +95,46 @@
     align-items: center;
     padding-top: 23px;
     border-top: 1px solid #666666;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      justify-content: space-between;
+      }
   }
 
-  // &__title-star {
+  &__stars-section {
 
-  //   display: flex;
-  //   justify-content: space-between;
-  //   padding-left: 15px;
-  // }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 15px;
+    border: none;
+  }
+
+  &__stars-group {
+
+    color: #836E5B;
+  }
   
   &__stars-block {
 
     display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+    flex-wrap: wrap;
     border: none;
   }
+
+  &__stars-block:hover  {
+    color: #836E5B;
+  }
+
+  &__label-star:hover, &__form-star:focus + &__label-star {
+
+    cursor: pointer;
+    color: #836E5B;
+  }
+
+  &__label-star:checked, &__form-star {
+    color: #434343;
+  } 
 
   &__star-text {
 
@@ -105,23 +148,11 @@
     border: none;
   }
   
-  .stars-group {
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px;
-  }
 
   &__star-block {
   
     cursor: pointer;
     position: relative;
-    margin-right: 5px;
-    outline: none;
-    appearance: none;
-    border: none;
   }
 
 
@@ -132,6 +163,10 @@
     margin: 0;
     padding: 0;
     border: none;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      flex-wrap: wrap;
+      }
   }
   
   &__connect-form {

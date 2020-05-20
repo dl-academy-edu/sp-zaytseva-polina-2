@@ -1,60 +1,63 @@
-.svg .line {
+.svg-wrapper {
+  cursor: pointer;
+  width: 418px;
+  height: 351px;
+}
+
+.svg-wrapper .line {
 
   transition: 1s transform;
   transform: translateX(200px);
   
 }
-  .svg {
-    cursor: pointer;
-  }
 
-  .svg:hover .line {
+  .svg-wrapper:hover .line {
     transform: translateX(0);
     transform: translateX(0);
   }
 
-  .svg .half {
+  .svg-wrapper .half {
     transition: 1s transform;
     transform: translateX(-250px);
   }
 
-  .svg:hover .half {
+  .svg-wrapper:hover .half {
     transform: translateX(0);
   }
 
-  .svg .sun {
+  .svg-wrapper .sun {
     transition: 1s transform;
     transform: translateX(250px);
   }
 
-  .svg:hover .sun {
+  .svg-wrapper:hover .sun {
     transform: translateX(0);
   }
 
-  .svg .big-mountain {
+  .svg-wrapper .big-mountain {
     transition: 1s transform;
     transform: translateX(-450px);
   }
 
-  .svg:hover .big-mountain {
+  .svg-wrapper:hover .big-mountain {
     transform: translateX(0);
   }
 
-  .svg .mountain {
+  .svg-wrapper .mountain {
     transition: 1s transform;
     transform: translateX(250px);
   }
 
-  .svg:hover .mountain {
+  .svg-wrapper:hover .mountain {
     transform: translateX(0);
   }
 
-  .svg .total {
+  .svg-wrapper .total {
     transition: 1s transform;
     transform: translateX(-450px);
   }
 
-  .svg:hover .total {
+  .svg-wrapper:hover .total {
     transform: translateX(0);
   }
 

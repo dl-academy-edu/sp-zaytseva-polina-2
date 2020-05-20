@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +7,7 @@
     <link href="style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/static/fonts/oswald.css"/>
     <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   </head>
   <body>
     @@include('header/index.html')
@@ -19,6 +21,7 @@
 
         <div>
           <section class="grid-container">
+            <h1 hidden>гриды</h1>
             <div class="grid-box box_1">
               <div class="box-text">
                 <a class="box-text__link" href="#">IPHONE 6S</a>
@@ -48,7 +51,7 @@
                 <a class="grid-monik__link" href="#">IMAC.RETINA</a>
                 <p class="grid-monik__title">Hardly a month passes these days where</p>
                 <picture>
-                  <source srcset="static/images/monik-tablet.png"
+                  <source srcset="/static/images/monik-tablet.png"
                   media="(max-width: 768px)">
                   <img class="grid-monik__img" src="/static/images/grid-monik.jpg" alt="grid-monik">
                 </picture>
