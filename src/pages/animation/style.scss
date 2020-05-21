@@ -1,0 +1,348 @@
+.animation {
+
+  &__title {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-align: left;
+  margin-top: 90px;
+  }
+
+  &__link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+  &__link:hover, &__link:focus {
+  
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+  
+  &__arrow {
+  
+    margin-right: 20px;
+  }
+}
+
+.animation-scene {
+
+  overflow: hidden;
+  margin-top: 50px;
+  position: relative;
+
+  &__clouds {
+
+  width: 100%
+  }
+
+  &__city {
+
+  width: 100%
+  }
+  
+  &__woman {
+
+  z-index: 4;
+  position: absolute;
+  left: 298px;
+  bottom: 29px;
+  }
+
+  &__womantext {
+
+  left: 198px;
+  bottom: 350px;
+  opacity: 0;
+  position: absolute;
+  animation: womantext 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  }
+
+  @keyframes womantext {
+    0%, 100% {
+    opacity: 0;
+    }
+
+    20%, 80% {
+    opacity: 1;
+    }
+  }
+
+  &__shoe {
+
+  z-index: 4;
+  position: absolute;
+  left: 340px;
+  bottom: 29px;
+
+  animation: shoe 3s;
+  animation-iteration-count: infinite;
+  transform: rotateZ(0);
+  transform-origin: 90% 5%;
+  }
+
+  @keyframes shoe {
+    0% {
+      transform: rotateZ(0);
+      }
+  
+      50% {
+      transform: rotateZ(-100deg);
+      }
+  
+      100% {
+      transform: rotateZ(0);
+      }
+  }
+
+  &__suitcases {
+
+  z-index: 5;
+  position: absolute;
+  left: 285px;
+  bottom: 28px;
+  }
+
+  &__man {
+
+  z-index: 4;
+  position: absolute;
+  left: 398px;
+  bottom: 30px;
+  }
+
+  &__mantext {
+
+  left: 398px;
+  bottom: 400px;
+  opacity: 0;
+  position: absolute;
+  animation: mantext 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  }
+
+  @keyframes mantext {
+    0%, 100% {
+    opacity: 0;
+    }
+
+    20%, 80% {
+    opacity: 1;
+  }
+}
+
+  &__arm {
+
+  z-index: 3;
+  position: absolute;
+  left: 398px;
+  bottom: 287px;
+
+  animation: arm 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  transform: rotateZ(100deg);
+  transform-origin: 17% 87%;
+  }
+
+  @keyframes arm {
+
+    0%, 100% {
+    transform: rotateZ(100deg);
+    }
+
+    50% {
+    transform: rotateZ(0);
+    }
+
+  }
+
+  &__lampcolor {
+
+  z-index: 4;
+  position: absolute;
+  left: 1606px;
+  bottom: 60px;
+  }
+
+  &__lamp {
+
+  z-index: 3;
+  position: absolute;
+  left: 598px;
+  bottom: 216px;
+  }
+
+  &__lamptwo {
+
+  z-index: 3;
+  position: absolute;
+  left: 2024px;
+  bottom: 216px;
+  }
+
+  &__carone {
+
+  z-index: 2;
+  position: absolute;
+  left: -2800px;
+  bottom: 256px;
+
+  animation: carone 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes carone {
+    
+    form {
+    bottom: 256px;
+    }
+
+    to {
+    left: 2890px;
+    bottom: 256px;
+    }
+  }
+
+  &__cartwo {
+
+    z-index: 2;
+    position: absolute;
+    left: 2403px;
+    bottom: 256px;
+
+    animation: cartwo 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
+    }
+
+    @keyframes cartwo {
+      
+    form {
+    left: 2403px;
+    bottom: 256px;
+    }
+
+    to {
+    left: -2567px;
+    bottom: 256px;
+    }
+    }
+
+    &__carthree {
+
+    z-index: 2;
+    position: absolute;
+    left: -3000px;
+    bottom: 256px;
+
+    animation: carthree 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+
+    @keyframes carthree {
+      
+      form { 
+      bottom: 256px;
+      }
+
+      to {
+      left: 2800px;
+      bottom: 256px;
+      }
+    }
+
+    &__carfour {
+
+    z-index: 2;
+    position: absolute;
+    left: 2300px;
+    bottom: 256px;
+
+    animation: carfour 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
+    }
+
+    @keyframes carfour {
+
+    form {
+
+    left: 2800px;
+    bottom: 256px;
+    transform: rotateY(0);
+    }
+
+    to {
+
+    left: -1800px;
+    bottom: 256px;
+    transform: rotateY(180deg);
+    }
+  }
+
+    &__car {
+
+    z-index: 3;
+    position: absolute;
+    left: -1253px;
+    bottom: 106px;
+
+    animation: car 8s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    }
+
+    @keyframes car {
+
+    from {
+      left: 2900px;
+      bottom: 106px;
+    }
+    60% {
+      left: 398px;
+      bottom: 106px;
+    }
+
+    to {
+      left: -2298px;
+      bottom: 106px;
+    }
+  }
+
+  &__taxitext {
+
+    left: 698px;
+    bottom: 380px;
+    opacity: 0;
+    position: absolute;
+    animation: taxitext 2s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    }
+  
+    @keyframes taxitext {
+
+    0%, 100% {
+    opacity: 0;
+    }
+
+    20%, 80% {
+    opacity: 1;
+    }
+  }
+}

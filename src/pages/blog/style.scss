@@ -1,0 +1,166 @@
+.blog {
+
+  &__categorys-link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+  &__categorys-link:hover, &__categorys-link:focus {
+  
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+  
+  &__categorys-arrow {
+  
+    margin-right: 20px;
+  }
+
+  &__list {
+
+    padding: 0;
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 10px;
+    padding-top: 50px;
+  }
+
+  &__link:hover &__heading, &__link:active &__heading, &__link:focus &__heading {
+
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &__link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+
+  &__img {
+
+    background-color: #E5EAF8;
+  }
+
+  &__title {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    text-align: left;
+  }
+  
+  &__note {
+  
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #818181;
+    mix-blend-mode: normal;
+  }
+  
+  &__heading {
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1E0606;
+  }
+  
+  &__heading:hover, &__heading:focus {
+  
+    text-decoration-line: underline;
+    color: #1E0606;
+  
+  }
+  
+  &__text {
+  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+  }
+
+  &__arrow {
+
+    margin-right: 20px
+  }
+}
+
+
+.img-nav {
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
+
+  &__link-color:hover, &__link-color:focus {
+
+    cursor: pointer;
+    stroke: #C29974;
+    stroke-opacity: 1;
+  }
+  
+  &__link-color:active {
+  
+    cursor: none;
+    stroke: #C29974;
+    stroke-opacity: 0.5;
+  }
+
+  &__number {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 0;
+    color: #1E0606;
+  }
+
+  &__item {
+
+    display: flex;
+    color: #1E0606;
+  }
+  
+  &__item:hover, &__item:focus {
+  
+    color: #C29974;
+  }
+  
+  &__item:active {
+  
+    opacity: 0.5;
+  }
+}
+

@@ -1,0 +1,88 @@
+// Подключение компонентов
+
+@import "./header/header";
+@import "./footer/footer";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet');
+@import "./button/button";
+@import "./popup/popup";
+@import "./contacts/contacts";
+@import "./star/star";
+
+
+body { 
+  
+  font-family: 'Open Sans' , sans-serif;
+  margin: 0;
+} 
+
+a { 
+
+  text-decoration: none; 
+} 
+
+.hidden {
+  
+  display: none;
+}
+
+.opacity {
+
+  opacity: 0;
+}
+
+.list-hidden-marker {
+
+  list-style-type: none;
+}
+
+.fieldset-border-none {
+  border: none;
+  width: fit-content;
+  padding: 0;
+  }
+
+.button_black {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  padding: 9px 22px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.button_black:hover {
+
+  cursor: pointer;
+  background-color: #C29974;
+}
+
+.button_black:active {
+
+  background-color: #CFAF91;
+}
+
+.container {
+
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 110px;
+  box-sizing: border-box;
+
+  @media (max-width: 1400px ) {
+    min-width: 648px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 0 20px;
+  }
+}

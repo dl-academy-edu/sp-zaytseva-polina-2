@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/oswald.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+      <section class="grid container">
+        <h2 class="grid__title">GRID</h2>
+        <a class="grid__categorys-link designer" href="/index.html">Home</a>
+          <img class="grid__categorys-arrow" width="8" height="12" src="/static/images/vector3.svg" alt="vector3">
+        <a class="grid__categorys-link" href="#">Grid</a>
+      </section>
+
+        <div>
+          <section class="grid-container">
+            <h1 hidden>гриды</h1>
+            <div class="grid-box box_1">
+              <div class="box-text">
+                <a class="box-text__link" href="#">IPHONE 6S</a>
+                <p class="box-text__text">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+                <a class="box-text__links" href="#">Learn more or visit an Apple Store today</a>
+              </div>
+              <picture>
+                <source srcset="/static/images/grid-phone-mobile.jpg"
+                media="(min-width: 375px)">
+                <img class="grid__img" src="/static/images/grid-phone.jpg" alt="grid-phone">
+              </picture>
+            </div>
+            <div class="grid-text box_2">
+              <a class="grid-text__link" href="#">LEARN MORE</a>
+              <p class="grid-text__content">How to Use Rotary Evaporator in Chemical Labs</p>
+              <button class="grid-text__button">Learn more or visit an Apple Store today</button>
+            </div>
+            <div class="grid-orange box_3">
+              <img class="grid-orange__img" src="/static/images/grid-klava.png" alt="grid-klava">
+              <div class="grid-orange__text">
+                <p class="grid-orange__title">Our Brand New Keyboard</p>
+                <a class="grid-orange__link" href="#">LEARN</a>
+              </div>
+            </div>
+            <div class="grid-monik box_4">
+              <div class="box-monik">
+                <a class="grid-monik__link" href="#">IMAC.RETINA</a>
+                <p class="grid-monik__title">Hardly a month passes these days where</p>
+                <picture>
+                  <source srcset="/static/images/monik-tablet.png"
+                  media="(max-width: 768px)">
+                  <img class="grid-monik__img" src="/static/images/grid-monik.jpg" alt="grid-monik">
+                </picture>
+              </div>
+              <div class="box-monik-text">
+                <p class="grid-monik__text">Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+                <a class="grid-monik__links" href="#">DOWNLOAD NOW</a>
+              </div>
+            </div>
+            <div class="box_5">
+              <div class="grid-violet">
+                <img class="grid-violet__img" src="/static/images/grid-disket.png" alt="grid-disket">
+                <p class="grid-violet__title">iCloud</p>
+                <p class="grid-violet__text">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+                <button class="grid-violet__button">LEARN MORE</button>
+              </div>
+            </div>
+            <div class="grid-blue box_6">
+              <a class="grid-blue__link" href="#">BEST CHOICE</a>
+              <p class="grid-blue__title">Much MuchBetter Experience</p>
+              <img class="grid-blue__img" src="/static/images/grid-nout.png" alt="grid-nout">
+            </div>
+            <div class="grid-game box_7">
+              <img class="grid-game__img" src="/static/images/grid-games.png" alt="grid-gamepad">
+              <p class="grid-game__text">Games ourpasion</p>
+              <a class="grid-game__link" href="#">LEARN</a>
+            </div>
+            <div class="grid-inst box_8">
+              <img class="grid-inst__img" src="/static/images/grid-inst.png" alt="grid-inst">
+              
+            </div>
+            <div class="grid-black box_9">
+              <img class="grid-black__img" src="/static/images/grid-tv.png" alt="grid-tv">
+              <p class="grid-black__text">More than just a display, it’s a vision</p>
+            </div>
+          </section>
+        </div>
+
+    </main>
+    @@include('footer/index.html')
+  </body>
+</html>

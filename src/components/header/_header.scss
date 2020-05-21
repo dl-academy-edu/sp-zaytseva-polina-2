@@ -1,0 +1,163 @@
+.header {
+
+    font-family: 'Open sans' , sans-serif;
+    margin-top: 50px;
+    margin-bottom: 56px;
+
+    &__content {
+  
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &__logo-link {
+    
+      display: flex;
+      justify-content: space-between;
+
+      @media (min-width: 320px) and (max-width: 425px) {
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-bottom: 26px;
+      }
+    }
+    
+    &__logo-link:hover {
+    
+      opacity: 0.5;
+      cursor: pointer;
+    }
+    
+    &__menu-wrapper {
+    
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @media (min-width: 375px) and (max-width: 850px) {
+        align-items: center;
+      }
+
+      @media (min-width: 0) and (max-width: 320px) {
+        align-items: center;
+      }
+    }
+    
+    &__menu {
+    
+      display: flex;
+
+      @media (min-width: 0) and (max-width: 320px) {
+        display: none;
+      }
+
+      @media (min-width: 320px) and (max-width: 768px) {
+        display: none;
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: initial;
+      }
+    }
+    
+    &__menu-item {
+    
+      margin: 10px;
+      font-size: 14px;
+      line-height: 19px;
+      color: #1E0606;
+      box-sizing: content-box;
+    }
+    
+    &__menu-item:hover {
+    
+      opacity: 0.5;
+      cursor: pointer;
+    }
+    
+    &__menu-link {
+    
+      color: #1E0606;
+    }
+    
+    &__search-list {
+    
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 0) and (max-width: 767px) {
+        padding: 0;
+      }
+    }
+    
+    &__search-link {
+    
+      margin-right: 24px;
+      display: flex;
+
+      @media (min-width: 0) and (max-width: 375px) {
+        margin-right: 310px;
+      }
+
+      @media (min-width: 375) and (max-width: 767px) {
+        margin-right: 270px;
+      }
+    }
+    
+    &__search-link:hover {
+    
+      opacity: 0.5;
+      cursor: pointer;
+    }
+    
+    &__search-text {
+    
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      color: #1E0606;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 375px) and (max-width: 850px) {
+        display: none;
+      }
+
+      @media (min-width: 0px) and (max-width: 375px) {
+        display: none;
+      }
+    }
+    
+    &__search-text:hover {
+    
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    &__menu-button {
+      font-size: 14px;
+      line-height: 19px;
+      display: none;
+      border: none;
+      background-color: transparent;
+    
+      @media (min-width: 375px) and (max-width: 768px) {
+        cursor: pointer;
+        display: initial;
+        text-align: center;
+        width: 100%;
+      }
+
+      @media (min-width: 0) and (max-width: 375px) {
+        cursor: pointer;
+        display: initial;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+  
+  
+  

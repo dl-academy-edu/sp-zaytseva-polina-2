@@ -1,0 +1,139 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/oswald.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  </head>
+  <body>
+@@include('header/index.html')
+
+<main>
+  <section class="toys container">
+    <h1 class="toys__title">Toy for kids</h1>
+    <a class="toys__link" href="#">Home</a>
+    <img class="toys__arrow" width="8" height="12" src="/static/images/vector3.svg" alt="vector3">
+    <a class="toys__link" href="#">Catalog</a>
+    <img class="toys__arrow" width="8" height="12" src="/static/images/vector3.svg" alt="vector3">
+    <a class="toys__link" href="#">Toys</a>
+  </section>
+  <section class="toys-section">
+    <h1 class="hidden">Toys</h1>
+    <form class="toys-section__toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+      <fieldset class="toys-section__form-section fieldset-border-none">
+        <legend class="toys-section__section-title">Cost</legend>
+        <div class="toys-section__cost">
+        <label class="toys-section__label-cost" for="input-cost">0</label>
+        <input class="toys-section__input-cost" name="input-cost" id="input-cost" step="10" type="range" min="0" max="35" value="10">
+        <label class="toys-section__label-cost" for="input-cost">500</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="toys-section__form-section fieldset-border-none">
+      <legend class="toys-section__section-title">Color</legend>
+        <div class="toys-section__color-section">
+          <input class="toys-section__form-color opacity" id="input-black" name="color" type="checkbox" value="black">
+          <label class="toys-section__label-color toys-section__form-color-checkbox" for="input-black">Black</label>
+        </div>
+        <div class="toys-section__color-section">
+          <input class="toys-section__form-color opacity" id="input-blue" name="color" type="checkbox" value="blue">
+          <label class="toys-section__label-color toys-section__form-color-checkbox" for="input-blue">Blue</label>
+        </div>
+        <div class="toys-section__color-section">
+          <input class="toys-section__form-color opacity" id="input-green" name="color" type="checkbox" value="green">
+          <label class="toys-section__label-color toys-section__form-color-checkbox" for="input-green">Green</label>
+        </div>
+        <div class="toys-section__color-section">
+          <input class="toys-section__form-color opacity" id="input-white" name="color" type="checkbox" value="white">
+          <label class="toys-section__label-color toys-section__form-color-checkbox" for="input-white">White</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="toys-section__form-sections fieldset-border-none">
+      <legend class="toys-section__section-title">Delivery</legend>
+        <div class="toys-section__shipping-section">
+          <input class="toys-section__form-shipping opacity" id="input-free" name="shipping" type="radio" value="free shipping">
+          <label class="toys-section__label-shipping shipping-checkbox" for="input-free">Free shipping</label>
+        </div>
+        <div class="toys-section__shipping-section">
+          <input class="toys-section__form-shipping opacity" id="input-fast" name="shipping" type="radio" value="fast shipping" checked>
+          <label class="toys-section__label-shipping shipping-checkbox" for="input-fast">Fast shipping</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="toys-section__form-section fieldset-border-none">
+        <legend class="toys-section__section-title">Amount</legend>
+        <ul class="toys-section__amount-section list-hidden-marker">
+          <li class="amount-cells">
+            <input class="toys-section__form-amount opacity" id="input-amount1" name="amount" type="radio" value="0-5" checked>
+            <label class="toys-section__label-amount" for="input-amount1">0-5</label>
+          </li>
+          <li class="amount-cells">
+            <input class="toys-section__form-amount opacity" id="input-amount2" name="amount" type="radio" value="10-20">
+            <label class="toys-section__label-amount" for="input-amount2">10-20</label>
+          </li>
+          <li class="amount-cells">
+            <input class="toys-section__form-amount opacity" id="input-amount3" name="amount" type="radio" value="20-50">
+            <label class="toys-section__label-amount" for="input-amount3">20-50</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="toys-section__button-form-amount button_black" type="submit">APLLY</button>
+    </form>
+  </section>
+
+  <section class="toys-shop container">
+    <h1 class="hidden">Shop</h1>
+    <ul class="toys-shop__list list-hidden-marker">
+      <li class="toys-shop__shop-item"><a class="toys-shop__toy-link" href="#">
+        <img class="toys-shop__img" width="380" height="385" src="/static/images/sharky.jpg" alt="sharky"><p class="toys-shop__shop-text">SHARKY BEAN BAG CHAIR COVER</p><p class="toys-shop__usd-text">$60.00 USD</p>
+        <div class="toys-shop__toys-shop-img"><p class="toys-shop__text">LEARN MORE</p></div></a>
+      </li>
+      <li class="toys-shop__shop-item"><a class="toys-shop__toy-link" href="#">
+        <img class="toys-shop__img" width="380" height="385" src="/static/images/brass.jpg" alt="brass"><p class="toys-shop__shop-text">BRASS DECO FRAMES</p><p class="toys-shop__usd-text">$66.00 USD</p>
+        <div class="toys-shop__toys-shop-img"><p class="toys-shop__text">LEARN MORE</p></div></a>
+      </li>
+      <li class="toys-shop__shop-item"><a class="toys-shop__toy-link" href="#">
+        <img class="toys-shop__img" width="380" height="385" src="/static/images/cibo.jpg" alt="cibo"><p class="toys-shop__shop-text">CIBO FULL APRON</p><p class="toys-shop__usd-text">$60.00 USD</p>
+        <div class="toys-shop__toys-shop-img"><p class="toys-shop__text">LEARN MORE</p></div></a>
+      </li>
+      <li class="toys-shop__shop-item"><a class="toys-shop__toy-link" href="#">
+        <img class="toys-shop__img" width="380" height="385" src="/static/images/gatcha.jpg" alt="gatcha"><p class="toys-shop__shop-text">GATCHA GATCHA GUMBALL MACHINE</p><p class="toys-shop__usd-text">$56.00 USD</p>
+        <div class="toys-shop__toys-shop-img"><p class="toys-shop__text">LEARN MORE</p></div></a>
+      </li>
+      <li class="toys-shop__shop-item"><a class="toys-shop__toy-link" href="#">
+        <img class="toys-shop__img" width="380" height="385" src="/static/images/christmas.jpg" alt="christmas"><p class="toys-shop__shop-text">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="toys-shop__usd-text">$29.00 USD</p>
+        <div class="toys-shop__toys-shop-img"><p class="toys-shop__text">LEARN MORE</p></div></a>
+      </li>
+      <li class="toys-shop__shop-item"><a class="toys-shop__toy-link" href="#">
+        <img class="toys-shop__img" width="380" height="385" src="/static/images/tangle.jpg" alt="tangle"><p class="toys-shop__shop-text">TANGLE SPINNING TEA LIGHT</p><p class="toys-shop__usd-text">$56.00 USD</p>
+        <div class="toys-shop__toys-shop-img"><p class="toys-shop__text">LEARN MORE</p></div></a>
+      </li>
+    </ul>
+  </section>
+
+  <div class="img-nav list-hidden-marker container">
+    <a class="img-nav__link">
+      <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="img-nav__link-color" d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+      </svg>
+    </a>
+    <ul class="img-nav__number list-hidden-marker">
+      <li class="img-nav__item"><a class="img-nav__item" href="#">1</a></li>
+      <li class="img-nav__item"><a class="img-nav__item" href="#">2</a></li>
+      <li class="img-nav__item"><a class="img-nav__item" href="#">3</a></li> 
+      <li class="img-nav__item"><a class="img-nav__item" href="#">4</a></li> 
+    </ul>
+    <a class="img-nav__link">
+      <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="img-nav__link-color" d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+      </svg>
+    </a>
+  </div>
+</main>
+@@include('footer/index.html')
+</body>
+</html>

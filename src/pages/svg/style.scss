@@ -1,0 +1,96 @@
+.svg-wrapper {
+  cursor: pointer;
+  width: 418px;
+  height: 351px;
+}
+
+.svg-wrapper .line {
+
+  transition: 1s transform;
+  transform: translateX(200px);
+  
+}
+
+  .svg-wrapper:hover .line {
+    transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .svg-wrapper .half {
+    transition: 1s transform;
+    transform: translateX(-250px);
+  }
+
+  .svg-wrapper:hover .half {
+    transform: translateX(0);
+  }
+
+  .svg-wrapper .sun {
+    transition: 1s transform;
+    transform: translateX(250px);
+  }
+
+  .svg-wrapper:hover .sun {
+    transform: translateX(0);
+  }
+
+  .svg-wrapper .big-mountain {
+    transition: 1s transform;
+    transform: translateX(-450px);
+  }
+
+  .svg-wrapper:hover .big-mountain {
+    transform: translateX(0);
+  }
+
+  .svg-wrapper .mountain {
+    transition: 1s transform;
+    transform: translateX(250px);
+  }
+
+  .svg-wrapper:hover .mountain {
+    transform: translateX(0);
+  }
+
+  .svg-wrapper .total {
+    transition: 1s transform;
+    transform: translateX(-450px);
+  }
+
+  .svg-wrapper:hover .total {
+    transform: translateX(0);
+  }
+
+
+.svg-caption {
+
+  &__title{
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-align: left;
+  margin-top: 90px;
+  }
+
+  &__categorys-link {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 20px;
+    color: #1E0606;
+  }
+  
+  &__categorys-link:hover, &__categorys-link:focus {
+  
+    cursor: pointer;
+    color: #1E0606;
+    opacity: 0.5;
+  }
+  
+  &__categorys-arrow {
+    margin-right: 20px;
+  }
+}
